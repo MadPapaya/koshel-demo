@@ -1,7 +1,7 @@
-const CACHE_VERSION = 'v5';
+const CACHE_VERSION = 'v6';
 const CACHE_NAME = `koshel-${CACHE_VERSION}`;
 const BASE_PATH = new URL(self.registration.scope).pathname.replace(/\/$/, '') || '';
-const PRECACHE_URLS = [`${BASE_PATH}/`, `${BASE_PATH}/mortgage`];
+const PRECACHE_URLS = [`${BASE_PATH}/`, `${BASE_PATH}/mortgage`, `${BASE_PATH}/savings`];
 
 function extractResources(html) {
   const resources = [];
